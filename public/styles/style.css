@@ -98,6 +98,12 @@ img{
     border: none;
     background-color: rgb(186, 243, 54);
 }
+@media only screen and (max-width: 768px) {
+    .card-body{
+        width: 300px;
+        height: 120px;
+    }
+}
 .card-body:hover{
     background-color: rgb(208, 223, 208);   
 }
@@ -115,5 +121,7 @@ img{
 /* code for bg img of update page */
 #body{
     background-image: url("../images/forest2.webp");
-    background-size: cover;
+    background-size:cover;
+    margin: 0px;
+    padding: 0px;
 }

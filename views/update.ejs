@@ -29,20 +29,17 @@
         height: 60px;
         margin-bottom: 20px;
     } 
+    @media only screen and(max-width: 376px) {
+            input{
+                width: 320px;
+            }
+         }
     #content{
         height: 90px;
         width: 480px;
         border: 2px solid rgb(7, 49 ,7);
         background-color: azure;
-
         border-radius: 7px;
-        margin-left: 20px;
-
-    }
-    #content:hover{ 
-        background-color: azure;
-        box-shadow:5px 5px 5px 5px rgb(7, 49 ,7) ;
-
         margin-left: 20px;
     }
     @media (max-width: 900px){
@@ -50,6 +47,22 @@
             width: 450px;
         }
     }
+    @media only screen and (max-width: 426px) {
+            #content{
+                width: 300px;
+            }
+        }
+        @media only screen and (max-width:426px){
+            #content{
+                margin-left: 50px;
+            }
+        }
+    #content:hover{ 
+        background-color: azure;
+        box-shadow:5px 5px 5px 5px rgb(7, 49 ,7) ;
+        margin-left: 20px;
+    }
+    
     .button{
         border: none;
         height: 50px;
@@ -61,12 +74,26 @@
         font-size: 20px;
         margin-top: 10px;
     }
-    @media (max-width: 700px){
+    @media only screen and (max-width: 768px) {
         .button{
-            margin-left: 150px;
+            margin-bottom: 55px;
+            margin-left: 30px;
         }
     }
-    
+    @media only screen and (max-width: 376px){
+        .button{
+            margin-left: 70px;
+            margin-bottom: 10px;
+            padding: 0px;
+            height: 40px;
+        }
+    }
+    @media only screen and (max-width:426px){
+            .button{
+                margin-left: 100px;
+                margin-bottom: 5px;
+            }
+        }
     .button:hover{
         border: 3px solid rgb(7, 49 ,7);
         border-radius: 8px;
@@ -80,20 +107,32 @@
     } 
     @media (max-width: 700px){
         .button:hover{
-            margin-left: 150px;
+            margin-left: 80px;
         }
     }
     .font{
-            font-size:30px ;
-            font-family: serif;
-            color: rgb(7, 49, 7);
-            text-shadow: 1px 1px 10px white;
+        font-size:30px ;
+        font-family: serif;
+        color: rgb(7, 49, 7);
+        text-shadow: 1px 1px 10px white;
     }
     @media (max-width: 900px){
             .font{
                 margin-left: 200px;
                 color: rgb(102, 33, 4);
             }
+    }
+
+    @media only screen and (max-width: 376px) {
+        .font{
+            margin-left: 100px;
+            font-size: 29px;
+        }
+    }
+    @media only screen and (max-width:426px){
+        .font{
+            margin: 100px;
+        }
     }
         #title{ 
             width: 480px;
@@ -106,7 +145,22 @@
             #title{
                 width: 450px;
             }
-         } 
+         }
+         @media only screen and (max-width: 426px) {
+            #title{
+                width: 300px;
+            }
+         }
+         @media only screen and(max-width: 376px) {
+            #title{
+                width: 320px;
+            }
+         }
+         @media only screen and (max-width:426px){
+            #title{
+                margin-left: 50px;
+            }
+        }
          #title:hover{
             width: 480px;
             height: 50px;
@@ -130,7 +184,18 @@
             .title{
                 width: 450px;
             }
-         } 
+         }
+         @media only screen and (max-width: 426px) {
+            .title{
+                width: 300px;
+                
+            }
+        }
+        @media only screen and (max-width:426px){
+            .title{
+                margin-left: 50px;
+            }
+        }
         .title:hover{
             width: 480px;
             height: 50px;

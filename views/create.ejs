@@ -4,53 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/create.css">
     <style>
-        svg{
-        height: 25px;
-        width: 30px;
-        color: white;
-        }
         *{
             padding: 0px;
             margin: 0px;
-        }
-        /* Navbar */
-        .nav{
-            margin-left: 500px;
-            gap: 5px;
-        }
-        @media (max-width: 1400px){
-            .nav{
-                margin-left: 90px;
-                }
-        }
-        @media (max-width: 740px){
-            .nav{
-                margin-left: 0px;
-                }
-        }
-
-        .px-2:hover{
-            transition: all .3s ease;
-            font-weight: bold;
-            border-radius: 3px;
-        }
-        .bottom-line{
-            border-bottom: #ebe4e4 3px solid;
-            transition: all .3s ease;
-            border-radius: 3px;
-        }
-        .text-end{
-            margin-right: 20px;
-        }
-        .color{
-            background-color: #000;
-        }
-        .search{
-            margin-left: 192px;
-            margin-top: 0px;
-            position: absolute;
         }
         label{
             font-size: larger;
@@ -81,8 +39,8 @@
 
         @media (max-width: 900px){
             textarea{
-                    width: 430px;
-                    }
+                width: 430px;
+            }
         }
         @media (max-width: 900px){
             h1{
@@ -113,12 +71,43 @@
                 color: rgb(102, 33, 4);
             }
         }
+        @media only screen and(max-width: 769px) {
+            .font{
+                margin-left: 0px;
+            }
+        }
+        @media only screen and (max-width: 376px) {
+            .font {
+                margin-left: 100px;
+            }
+        }
+        @media only screen and (max-width:426px){
+            .font{
+                margin-left: 130px;
+            }
+        }
         #title{
             border: 2px solid rgb(7, 49 ,7);
             border-radius: 7px;
-            
             height: 50px;
             margin-left: 40px;
+        }
+        @media only screen and (max-width: 768px) {
+            #title{
+                margin: 0px;
+            }
+        }
+        @media only screen and (max-width: 376px) {
+            #title {
+                margin-left: 40px;
+                width: 250px;
+            }
+        }
+        @media only screen and (max-width:426px){
+            #title{
+                margin-left: 30px;
+                width: 300px;
+            }
         }
         #title:hover{
             border: none;
@@ -130,9 +119,26 @@
             border-radius: 7px;
             margin-left: 40px;
         }
+        @media only screen and (max-width: 769px) {
+            #content{
+                margin: 0px;
+            }
+        }
+        @media only screen and (max-width:426px){
+            #content{
+                margin-left: 30px;
+                width: 300px;
+            }
+        }
+        @media only screen and (max-width: 376px) {
+            #content {
+                margin-left: 40px;
+                width: 250px;
+            }
+        }
         #content:hover{
             margin-left: 40px;
-        } 
+        }
         .button{
             border: none;
             border-radius: 8px;
@@ -142,10 +148,25 @@
             font-size: 20px;
             margin-top: 10px;
         }
+        @media only screen and (max-width: 768px) {
+            .button{
+                margin-left: 100px;
+                margin-bottom: 70px;
+            }
+        }
+        @media only screen and (max-width: 376px) {
+            .button {
+                margin-left: 60px;
+            }
+        }
+        @media only screen and (max-width:426px){
+            .button{
+                margin-left: 80px;
+            }
+        }
         .button:hover{
             border: 3px solid rgb(7, 49 ,7);
             border-radius: 8px;
-            margin-left: 175px;
             background-color:white;
             color: rgb(7, 49 ,7);
             font-size: 21px;
@@ -154,6 +175,7 @@
         .background{
             background-image: url("./images/forest2.webp");
             background-size: cover;
+            overflow: hidden;
         }
         .backButton{
             height: 40px;
@@ -163,6 +185,12 @@
             color: white;
             border-radius: 20px;
             font-weight: bold;
+        }
+        @media only screen and(max-width: 769px) {
+            .backButton{
+                margin: 0px;
+                padding: 0px;
+            }
         }
         .backButton:hover{
             background-color: whitesmoke;
